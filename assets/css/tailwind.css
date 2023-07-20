@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.wrapper {
+    @apply max-w-[1440px] mx-auto px-4 md:px-7 lg:px-8 xl:px-12;
+}
+.navbar-blur {
+    @apply backdrop-blur-lg bg-gray-950/50 shadow-xl shadow-gray-700/10;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
