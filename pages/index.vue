@@ -7,14 +7,7 @@
 
     <Portfolio />
 
-    <section id="work" class="section">
-        <div class="wrapper relative">
-            <SubTitle :title="$t('work_experience')" />
-            <div class="w-full h-96 p-32">
+    <WorkExperience />
 
-            </div>
-        </div>
-    </section>
-
-    <div class="mb-96"></div>
+    <div class="mb-14 md:mb-16 lg:mb-20"></div>
 </template>

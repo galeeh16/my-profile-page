@@ -1,5 +1,5 @@
 <template>
-    <section id="about" class="section">
+    <section id="about" class="section mb-10 md:mb-12 lg:mb-20">
         <div class="relative">
             <div
                 class="absolute left-0 top-44 w-52 h-40 md:w-80 md:h-64 lg:w-[500px] lg:h-[400px] lg:top-[50px bg-violet-500/25 blur-[175px]">

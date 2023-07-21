@@ -9,6 +9,13 @@
 </template>
 
 <script setup>
+import { initFlowbite } from 'flowbite'
+
+// initialize components based on data attribute selectors
+onMounted(() => {
+    initFlowbite();
+});
+
 useHead({
     bodyAttrs: {
         class: 'bg-dark text-gray-300 text-[14px] md:text-base'
@@ -21,7 +28,7 @@ let navbarObserver = ref();
 let currentSection = ref();
 let sectionObserver = ref();
 
-function callbackObserver(entries) {
+function navbarCallbackObserver(entries) {
     navbar.value.classList.toggle('navbar-blur', !entries[0].isIntersecting);
 }
 
@@ -30,14 +37,16 @@ onMounted(() => {
     navbar.value = document.querySelector('#my-navbar');
 
     // Navbar observer
-    navbarObserver.value = new IntersectionObserver(callbackObserver, {
+    navbarObserver.value = new IntersectionObserver(navbarCallbackObserver, {
         root: null,
         rootMargin: "0px 0px 0px 0px",
-        threshold: 1.0
+        threshold: 1.0,
+        // threshold: [1.0, 1.0, 1.0, 0.0],
     });
     navbarObserver.value.observe(document.querySelector('section'));
 
     sectionObserver.value = new IntersectionObserver((entries) => {
+        // console.log(entries)
         entries.forEach(entry => {
             if (entry.intersectionRatio > 0) {
                 currentSection.value = entry.target.getAttribute('id');

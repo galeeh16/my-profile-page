@@ -24,27 +24,6 @@
                             class="w-[400px] h-auto lg:w-[480px] xl:w-[600px] absolute left-0 md:left-10" />
                         <img src="/laptop.webp" alt="Laptop"
                             class="w-[120px] sm:w-[130px] md:w-[150px] lg:w-[250px] absolute -top-10 md:-top-11 lg:-top-16 xl:-top-20">
-                        <!-- <ClientOnly>
-                            <Motion :initial="{ opacity: 0, x: 50 }" :animate="{
-                                opacity: 1,
-                                x: 0,
-                                transition: { delay: 0, duration: 1 }
-                            }">
-                                <img src="/chat.webp" alt="Laptop"
-                                    class="w-[130px] md:w-[150px] lg:w-[200px] absolute -top-6 md:-top-10 lg:-top-20 -right-10">
-                            </Motion>
-                            <Motion :initial="{ y: -100 }" :animate="{
-                                y: 0,
-                                transition: { delay: 0, duration: 2.1 },
-                            }">
-                                <img src="/illustration.webp" alt="Illusration"
-                                    class="w-[400px] h-auto lg:w-[480px] xl:w-[600px] absolute left-0 md:left-10" />
-                            </Motion>
-                            <Motion :initial="{ x: -50 }" :animate="{ x: 0, transition: { duration: 1 } }">
-                                <img src="/laptop.webp" alt="Laptop"
-                                    class="w-[120px] sm:w-[130px] md:w-[150px] lg:w-[250px] absolute -top-10 md:-top-11 lg:-top-16 xl:-top-20">
-                            </Motion>
-                        </ClientOnly> -->
                     </div>
                 </div>
             </div>
@@ -59,14 +38,14 @@
 <style scoped>
 .gradient-02 {
     right: 10%;
-    background: rgba(78, 16, 126, 0.565);
+    background: rgba(78, 16, 126, 0.45);
     filter: blur(175px);
     transform: rotate(-114.2deg);
 }
 
 .gradient-03 {
     right: 20%;
-    background: rgba(60, 44, 167, 0.562);
+    background: rgba(60, 44, 167, 0.42);
     filter: blur(175px);
     transform: rotate(-114.2deg);
 }

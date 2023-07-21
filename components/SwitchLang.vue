@@ -1,12 +1,12 @@
 <template>
     <div class="flex items-center gap-3">
-        <div class="font-medium text-lg flex gap-2 items-center cursor-pointer tracking-wide"
+        <div class="font-medium flex gap-2 items-center cursor-pointer tracking-wide"
             :class="{ 'text-primary': locale === 'id' }" @click="swithLang('id')">
             <div v-html="locales[1].icon"></div>
             ID
         </div>
         <div class="text-gray-500">|</div>
-        <div class="font-medium text-lg flex gap-2 items-center cursor-pointer tracking-wide"
+        <div class="font-medium flex gap-2 items-center cursor-pointer tracking-wide"
             :class="{ 'text-primary': locale === 'en' }" @click="swithLang('en')">
             <div v-html="locales[0].icon"></div>
             EN
