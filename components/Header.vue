@@ -11,7 +11,7 @@
                         class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-primary py-5 px-0 mt-4 mb-4">
                         Galih Anggoro Jati
                     </h2>
-                    <Button @clickHandler="useScrollMeTo('about')">{{ $t('getting_started') }}</Button>
+                    <Button @clickHandler="scrollTo('about')">{{ $t('getting_started') }}</Button>
                 </div>
 
 
@@ -33,6 +33,11 @@
 
 <script setup>
 // import { Motion } from "motion/vue"
+
+function scrollTo(refName) {
+    const element = document.getElementById(refName);
+    window.scrollTo(0, (element.offsetTop - 80));
+}
 </script>
 
 <style scoped>

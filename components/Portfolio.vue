@@ -1,5 +1,5 @@
 <template>
-    <section id="portfolio" class="section py-6 md:pt-8 md:pb-28 lg:py-12 xl:pt-4 xl:pb-36">
+    <section id="portfolio" class="section py-0 md:pt-8 md:pb-28 lg:py-12 xl:pt-4 xl:pb-36">
 
         <div class="relative">
             <div
@@ -38,7 +38,7 @@
                 </Carousel>
 
                 <!-- Custom button next and prev -->
-                <div class="flex items-center justify-center gap-3 mt-6 md:mt-8 lg:mt-10 xl:mt-14">
+                <div class="flex items-center justify-center gap-3 mt-0 md:mt-8 lg:mt-10 xl:mt-14">
                     <button type="button" @click="slidePrevCarousel"
                         class="p-3 rounded-3xl font-medium text-white 0 duration-150 text-[14px] md:text-base"
                         :class="[isMinSlide ? 'bg-primary/30' : 'bg-primary hover:bg-primary/80']" :disabled="isMinSlide">
