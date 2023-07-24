@@ -3,7 +3,7 @@ export const useScrollMeTo = (refName) => {
     window.scrollTo(0, (element.offsetTop - 80));
 
     if (window.innerWidth < 1024) {
-        let b = document.getElementById('btn-hamburger')
+        let b = document.getElementById('hamburger')
         b.click()
     }
 }

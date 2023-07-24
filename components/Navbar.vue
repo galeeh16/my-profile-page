@@ -7,11 +7,20 @@
                     <span class="text-lg md:text-xl lg:text-[22px] font-semibold text-primary">{{ $t('its_me')
                     }}</span>
                 </a>
-                <button data-collapse-toggle="navbar-default" type="button" id="btn-hamburger"
+                <!-- <button data-collapse-toggle="navbar-default" type="button" id="btn-hamburger"
                     class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg lg:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-700"
                     aria-controls="navbar-default" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
                     <Icon name="heroicons:bars-3-bottom-right-20-solid" class="text-gray-200 w-6 h-6" />
+                </button> -->
+
+                <button type="button" data-collapse-toggle="navbar-default" class="block lg:hidden" ref="hamburger"
+                    @click="toggleSidebar">
+                    <span
+                        class="w-[30px] h-[2px] block bg-white my-2 transition-all duration-300 ease-in-out origin-top-left"></span>
+                    <span class="w-[30px] h-[2px] block bg-white my-2 transition-all duration-300 ease-in-out"></span>
+                    <span
+                        class="w-[30px] h-[2px] block bg-white my-2 transition-all duration-300 ease-in-out origin-bottom-left"></span>
                 </button>
 
                 <div class="hidden w-full lg:block lg:w-auto" id="navbar-default">
@@ -62,4 +71,15 @@ const links = [
         languageName: 'work_experience'
     }
 ];
+
+let hamburger = ref();
+
+function toggleSidebar() {
+    hamburger.value.classList.toggle('hamburger-active');
+}
+
+// onMounted(() => {
+//     const hamburger = document.querySelector('#hamburger');
+
+// })
 </script>
