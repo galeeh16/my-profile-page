@@ -3,16 +3,10 @@
         <nav class="wrapper py-4">
             <div class="flex flex-wrap items-center justify-between">
                 <a :href="switchLocalePath('/')" class="flex items-center gap-2">
-                    <Icon name="material-symbols:deployed-code-outline-sharp" class="text-primary w-6 h-6 md:w-8 md:h-8" />
-                    <span class="text-lg md:text-xl lg:text-[22px] font-semibold text-primary">{{ $t('its_me')
+                    <Icon name="material-symbols:deployed-code-outline-sharp" class="text-primary w-7 h-7 md:w-8 md:h-8" />
+                    <span class="text-xl lg:text-[22px] font-semibold text-primary">{{ $t('its_me')
                     }}</span>
                 </a>
-                <!-- <button data-collapse-toggle="navbar-default" type="button" id="btn-hamburger"
-                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg lg:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-700"
-                    aria-controls="navbar-default" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <Icon name="heroicons:bars-3-bottom-right-20-solid" class="text-gray-200 w-6 h-6" />
-                </button> -->
 
                 <button type="button" data-collapse-toggle="navbar-default" class="block lg:hidden" ref="hamburger"
                     @click="toggleSidebar">
@@ -37,9 +31,9 @@
                                 <SwitchLang />
                             </div>
                         </li>
-                        <!-- <li>
+                        <li>
                             <a href="" class="text-white">{{ currentSection }}</a>
-                        </li> -->
+                        </li>
                     </ul>
 
                 </div>

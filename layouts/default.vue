@@ -55,7 +55,7 @@ onMounted(() => {
     }, {
         root: null,
         rootMargin: "-30px 0px 0px 0px",
-        threshold: 1.0
+        threshold: [0, 0, 0, 0.35]
     });
 
     document.querySelectorAll('.section').forEach(section => {

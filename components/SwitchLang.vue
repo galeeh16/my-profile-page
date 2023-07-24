@@ -17,14 +17,16 @@
 <script setup>
 const { locale, locales } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
-// const router = useRouter()
+const router = useRouter()
 
 function swithLang(newValue) {
     if (newValue === locale.value) {
         return;
     }
     locale.value = newValue;
-    window.location.href = switchLocalePath(newValue);
-    // router.replace(switchLocalePath(newValue));
+
+
+    // window.location.href = switchLocalePath(newValue);
+    router.push(switchLocalePath(newValue));
 }
 </script>

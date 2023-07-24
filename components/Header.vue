@@ -5,7 +5,7 @@
                 <div class="mt-28 md:mt-36 lg:mt-40 xl:mt-44">
                     <h2 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold">{{ $t('hi_guys') }}</h2>
                     <h2
-                        class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-primary py-5 px-0 mt-4 mb-4">
+                        class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-primary py-5 px-0 mt-4 mb-4">
                         Galih Anggoro Jati
                     </h2>
                     <Button @clickHandler="scrollTo('about')">{{ $t('getting_started') }}</Button>
