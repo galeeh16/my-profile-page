@@ -22,7 +22,7 @@
                         class="font-medium flex items-center flex-col p-4 lg:p-0 mt-4 rounded-lg lg:flex-row lg:mt-0 bg-black/90 lg:bg-transparent">
                         <li v-for="link in links" :key="link.id" class="w-full lg:w-auto text-center">
                             <a href="javascript:void(0);" class="block py-2 md:py-4 lg:py-2 px-6 text-gray-300 nav-link"
-                                @click="useScrollMeTo(link.id)">
+                                :class="{ 'text-primary': currentSection === link.id }" @click="useScrollMeTo(link.id)">
                                 {{ $t(link.languageName) }}
                             </a>
                         </li>
@@ -31,9 +31,9 @@
                                 <SwitchLang />
                             </div>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="" class="text-white">{{ currentSection }}</a>
-                        </li>
+                        </li> -->
                     </ul>
 
                 </div>

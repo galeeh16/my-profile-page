@@ -17,6 +17,16 @@
                     technology
                     especially programming. I am friendly, responsive, interest for learn about new things, and i like
                     challenges. My hobby is playing pingpong, guitar, badminton, games and photography enthusiast.</p>
+                <p class="text-center px-4 md:px-8 lg:px-20 xl:px-40 mt-4 leading-7">Hi, my name is <b>Galih Anggoro
+                        Jati</b>. I am
+                    27
+                    years old and
+                    I am
+                    Informatics Engineer who
+                    loves
+                    technology
+                    especially programming. I am friendly, responsive, interest for learn about new things, and i like
+                    challenges. My hobby is playing pingpong, guitar, badminton, games and photography enthusiast.</p>
 
                 <div class="flex flex-col sm:flex-row gap-5 md:gap-8 lg:gap-10 xl:gap-14 2xl:gap-16 mt-10 md:mt-16">
                     <div class="w-48 h-48 md:w-56 md:h-56 lg:w-72 lg:h-72 self-center md:self-start">

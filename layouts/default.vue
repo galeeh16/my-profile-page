@@ -25,8 +25,8 @@ useHead({
 let navbar = ref();
 let navbarObserver = ref();
 
-let currentSection = ref();
-let sectionObserver = ref();
+// let currentSection = ref();
+// let sectionObserver = ref();
 
 function navbarCallbackObserver(entries) {
     navbar.value.classList.toggle('navbar-blur', !entries[0].isIntersecting);
@@ -45,22 +45,24 @@ onMounted(() => {
     });
     navbarObserver.value.observe(document.querySelector('section'));
 
-    sectionObserver.value = new IntersectionObserver((entries) => {
-        // console.log(entries)
-        entries.forEach(entry => {
-            if (entry.intersectionRatio > 0) {
-                currentSection.value = entry.target.getAttribute('id');
-            }
-        })
-    }, {
-        root: null,
-        rootMargin: "-30px 0px 0px 0px",
-        threshold: [0, 0, 0, 0.35]
-    });
+    // sectionObserver.value = new IntersectionObserver((entries) => {
+    //     console.log(entries)
+    //     entries.forEach(entry => {
+    //         if (entry.intersectionRatio > 0.5 && entry.target.getAttribute('id') !== 'work') {
+    //             currentSection.value = entry.target.getAttribute('id');
+    //         } else {
+    //             currentSection.value = entry.target.getAttribute('id');
+    //         }
+    //     })
+    // }, {
+    //     root: null,
+    //     rootMargin: "-30px 0px  0px 0px",
+    //     threshold: [1.0, 1.0, 1.0, 0.4]
+    // });
 
-    document.querySelectorAll('.section').forEach(section => {
-        sectionObserver.value.observe(section);
-    });
+    // document.querySelectorAll('.section').forEach(section => {
+    //     sectionObserver.value.observe(section);
+    // });
 });
 
 onUnmounted(() => {

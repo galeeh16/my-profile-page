@@ -26,7 +26,7 @@ function swithLang(newValue) {
     locale.value = newValue;
 
 
-    // window.location.href = switchLocalePath(newValue);
-    router.push(switchLocalePath(newValue));
+    window.location.href = switchLocalePath(newValue);
+    // router.push(switchLocalePath(newValue));
 }
 </script>
