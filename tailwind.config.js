@@ -9,13 +9,14 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ['Poppins', 'sans-serif']
+      sans: ['Poppins', 'sans-serif'],
+      galih: ['Pacifico', 'sans-serif']
     },
     extend: {
       colors: {
         primary: '#e84179',
         primaryHover: '#b02352',
-        dark: '#111317',
+        dark: '#1a2330',
         // dark: '#111',
       },
       // fontSize: {

@@ -1,5 +1,5 @@
 <template>
-    <section id="portfolio" class="section py-0 md:pt-8 md:pb-28 lg:py-12 xl:pt-4 xl:pb-36">
+    <section id="portfolio" class="section pt-10 pb-20 md:pt-8 md:pb-28 lg:py-12 xl:pt-4 xl:pb-36">
 
         <div class="relative">
             <div
@@ -14,10 +14,10 @@
                 <Carousel ref="myCarousel" v-bind="settings" :breakpoints="breakpoints">
                     <Slide v-for="portfolio in portfolios" :key="portfolio.id">
                         <div
-                            class="bg-gray-600/40 w-[370px] min-h-[200px] border border-gray-700/70 rounded-md lg:rounded-lg text-gray-200 overflow-hidden">
-                            <div class="w-full md:h-[180px] lg:h-[220px] xl:h-[230px] overflow-hidden">
+                            class="bg-gray-600/40 w-[370px] min-h-[200px] border border-gray-700/80 rounded-md lg:rounded-lg text-gray-200 overflow-hidden">
+                            <div class="w-full h-[210px] lg:h-[220px] xl:h-[240px]">
                                 <img v-lazy="portfolio.image"
-                                    class="w-full h-full object-cover rounded-tl-lg rounded-tr-lg" />
+                                    class="w-full h-[210px] lg:h-[220px] xl:h-[240px] object-cover rounded-tl-lg rounded-tr-lg" />
                             </div>
 
                             <div class="py-4 px-3 pt-3">
@@ -38,7 +38,7 @@
                 </Carousel>
 
                 <!-- Custom button next and prev -->
-                <div class="flex items-center justify-center gap-3 mt-0 md:mt-8 lg:mt-10 xl:mt-14">
+                <div class="flex items-center justify-center gap-3 mt-5 md:mt-8 lg:mt-10 xl:mt-14">
                     <button type="button" @click="slidePrevCarousel"
                         class="p-3 rounded-3xl font-medium text-white 0 duration-150 text-[14px] md:text-base"
                         :class="[isMinSlide ? 'bg-primary/30' : 'bg-primary hover:bg-primary/80']" :disabled="isMinSlide">
@@ -66,7 +66,7 @@ const myCarousel = ref(null)
 
 const settings = ref({
     itemsToShow: 1,
-    snapAlign: 'center',
+    snapAlign: 'start',
 })
 
 const isMaxSlide = computed(() => {
@@ -104,13 +104,18 @@ const breakpoints = ref({
         snapAlign: 'start',
     },
     700: {
-        itemsToShow: 1.9,
+        itemsToShow: 1.6,
+        snapAlign: 'start',
+        itemsToScroll: 1,
+    },
+    750: {
+        itemsToShow: 1.8,
         snapAlign: 'start',
         itemsToScroll: 1,
     },
     // 800px and up
     800: {
-        itemsToShow: 2.2,
+        itemsToShow: 2,
         snapAlign: 'start',
         itemsToScroll: 2
     },

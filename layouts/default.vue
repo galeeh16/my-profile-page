@@ -1,5 +1,5 @@
 <template>
-    <Navbar :currentSection="currentSection" />
+    <Navbar />
 
     <div class="mt-16 md:mt-24 lg:mt-36"></div>
 
@@ -39,7 +39,7 @@ onMounted(() => {
     // Navbar observer
     navbarObserver.value = new IntersectionObserver(navbarCallbackObserver, {
         root: null,
-        rootMargin: "0px 0px 0px 0px",
+        rootMargin: "0px 0px 130px 0px",
         threshold: 1.0,
         // threshold: [1.0, 1.0, 1.0, 0.0],
     });

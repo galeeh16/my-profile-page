@@ -4,11 +4,10 @@
             <div class="flex flex-wrap items-center justify-between">
                 <a :href="switchLocalePath('/')" class="flex items-center gap-2">
                     <Icon name="material-symbols:deployed-code-outline-sharp" class="text-primary w-7 h-7 md:w-8 md:h-8" />
-                    <span class="text-xl lg:text-[22px] font-semibold text-primary">{{ $t('its_me')
-                    }}</span>
+                    <span class="text-[26px] lg:text-[28px] text-primary font-galih">Galih</span>
                 </a>
 
-                <button type="button" data-collapse-toggle="navbar-default" class="block lg:hidden" ref="hamburger"
+                <button type="button" data-collapse-toggle="navbar-default" class="block lg:hidden scale-90" ref="hamburger"
                     @click="toggleSidebar">
                     <span
                         class="w-[30px] h-[2px] block bg-white my-2 transition-all duration-300 ease-in-out origin-top-left"></span>

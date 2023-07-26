@@ -3,6 +3,7 @@ import VueLazyload from 'vue-lazyload'
 export default defineNuxtPlugin(nuxtApp => {
   // Doing something with nuxtApp
   nuxtApp.vueApp.use(VueLazyload, {
+    observer: true,
     preLoad: 1.3,
     // error: errorimage,
     // loading: loadimage,
