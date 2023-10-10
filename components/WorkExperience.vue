@@ -5,7 +5,7 @@
 
             <div class="mt-4">
                 <div v-for="work in workExperiences" :key="work.id"
-                    class="pt-0 pr-0 pb-5 pl-5 border-l-2 border-l-primary relative before:bg-primary before:top-[5px] before:content=[''] before:absolute before:w-4 before:h-4 before:-left-[9px] before:rounded-full">
+                    class="pt-0 pr-0 pb-5 pl-5 border-l-2 border-l-primary relative before:bg-dark before:border-2 before:border-primary before:top-[5px] before:content=[''] before:absolute before:w-4 before:h-4 before:-left-[9px] before:rounded-full">
                     <h4 class="leading-[28px] text-lg text-primary font-medium mb-2">{{ work.office }}</h4>
                     <p class="italic leading-[28px]">
                         <span v-html="work.desc"></span>
