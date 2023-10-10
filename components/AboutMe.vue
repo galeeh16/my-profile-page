@@ -67,7 +67,7 @@
                                     <td class="align-top pb-4 text-left pl-10 pr-3">:</td>
                                     <td class="align-top pb-4 text-left flex items-center gap-1">
                                         <Icon name="material-symbols:check-circle-outline-rounded"
-                                            class="w-5 h-5 text-teal-500" />
+                                            class="w-5 h-5 text-green-400" />
                                         Available
                                     </td>
                                 </tr>
