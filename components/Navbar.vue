@@ -8,7 +8,7 @@
                 </a>
 
                 <button type="button" data-collapse-toggle="navbar-default" class="block lg:hidden scale-90" ref="hamburger"
-                    @click="toggleSidebar">
+                    name="toggle" aria-label="toggle" @click="toggleSidebar">
                     <span
                         class="w-[30px] h-[2px] block bg-white my-2 transition-all duration-300 ease-in-out origin-top-left"></span>
                     <span class="w-[30px] h-[2px] block bg-white my-2 transition-all duration-300 ease-in-out"></span>
