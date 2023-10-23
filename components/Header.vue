@@ -8,7 +8,7 @@
                         class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-primary py-5 px-0 mt-4 mb-4">
                         Galih Anggoro Jati
                     </h2>
-                    <Button @clickHandler="scrollTo('about')">{{ $t('getting_started') }}</Button>
+                    <Button name="getting-started" @clickHandler="scrollTo('about')">{{ $t('getting_started') }}</Button>
                 </div>
 
                 <div
