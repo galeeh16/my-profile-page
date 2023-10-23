@@ -5,7 +5,7 @@
             <div v-html="locales[1].icon"></div>
             ID
         </div>
-        <div class="text-gray-500">|</div>
+        <div class="text-gray-100">|</div>
         <div class="font-medium flex gap-2 items-center cursor-pointer tracking-wide"
             :class="{ 'text-primary': locale === 'en' }" @click="swithLang('en')">
             <div v-html="locales[0].icon"></div>

@@ -41,13 +41,15 @@
                 <div class="flex items-center justify-center gap-3 mt-5 md:mt-8 lg:mt-10 xl:mt-14">
                     <button type="button" @click="slidePrevCarousel"
                         class="p-3 rounded-3xl font-medium text-white 0 duration-150 text-[14px] md:text-base"
-                        :class="[isMinSlide ? 'bg-primary/30' : 'bg-primary hover:bg-primary/80']" :disabled="isMinSlide">
+                        :class="[isMinSlide ? 'bg-primary/30' : 'bg-primary hover:bg-primary/80 shadow-md shadow-pink-400/20']"
+                        :disabled="isMinSlide">
                         <Icon name="material-symbols:arrow-left-alt-rounded" class="w-6 h-6"
                             :class="[isMinSlide ? 'text-gray-500' : 'text-white']" />
                     </button>
-                    <button type=" button" @click="slideNextCarousel"
+                    <button type="button" @click="slideNextCarousel"
                         class="p-3 rounded-3xl font-medium text-white  duration-150 text-[14px] md:text-base"
-                        :class="[isMaxSlide ? 'bg-primary/30' : 'bg-primary hover:bg-primary/80']" :disabled="isMaxSlide">
+                        :class="[isMaxSlide ? 'bg-primary/30' : 'bg-primary hover:bg-primary/80 shadow-md shadow-pink-400/20']"
+                        :disabled="isMaxSlide">
                         <Icon name="material-symbols:arrow-right-alt-rounded" class="w-6 h-6"
                             :class="[isMaxSlide ? 'text-gray-500' : 'text-white']" />
                     </button>

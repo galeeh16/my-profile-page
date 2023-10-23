@@ -56,6 +56,10 @@ const workExperiences = [
             { id: '1-24', text: 'Creating Merchant Dashboard for Admin with Laravel.' },
             { id: '1-25', text: 'Creating Front KopnusCuanpao for with Vue JS.' },
             { id: '1-26', text: 'Creating Backend KopnusCuanpao for with Lumen.' },
+            { id: '1-27', text: 'Creating Backend Host to Host with Seabank.' },
+            { id: '1-28', text: 'Creating Backend Host to Host with Bank Kalsel.' },
+            { id: '1-29', text: 'Creating Backend Host to Host with Hana Bank.' },
+            { id: '1-30', text: 'Creating Backend Host to Host with Bukopin.' },
         ]
     },
     {
