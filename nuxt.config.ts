@@ -23,7 +23,7 @@ export default defineNuxtConfig({
         },
         {
           name: 'keywords',
-          content: 'Profile, Galih, Galih Anggoro, Galih Anggor Jati'
+          content: 'Profile, Galih, Galih Anggoro, Galih Anggoro Jati'
         }
       ],
       link: [

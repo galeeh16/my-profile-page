@@ -21,7 +21,7 @@
                 <div
                     class="mt-10 mt:pt-20 lg:mt-24 border-[10px] border-gray-700 h-[270px] md:h-[290px] lg:h-[350px] xl:h-[400px] my-border flex-1 hidden sm:block">
                     <div class="relative">
-                        <img src="/chat.webp" alt="Laptop"
+                        <img src="/chat.webp" alt="Chat"
                             class="w-[130px] md:w-[150px] lg:w-[200px] absolute -top-6 md:-top-10 lg:-top-20 -right-10">
                         <img src="/illustration.webp" alt="Illusration"
                             class="w-[400px] h-auto lg:w-[480px] xl:w-[600px] absolute left-0 md:left-10" />

@@ -19,12 +19,12 @@
                 <div class="hidden w-full lg:block lg:w-auto" id="navbar-default">
                     <ul
                         class="font-medium flex items-center flex-col p-4 lg:p-0 mt-4 rounded-lg lg:flex-row lg:mt-0 bg-black/90 lg:bg-transparent">
-                        <li v-for="link in links" :key="link.id" class="w-full lg:w-auto text-center">
-                            <a href="javascript:void(0);" class="block py-2 md:py-4 lg:py-2 px-6 text-gray-100 nav-link"
+                        <template v-for="link in links" :key="link.id" class="w-full lg:w-auto text-center">
+                            <div class="block py-2 md:py-4 lg:py-2 px-6 text-gray-100 nav-link cursor-pointer"
                                 :class="{ 'text-primary': currentSection === link.id }" @click="useScrollMeTo(link.id)">
                                 {{ $t(link.languageName) }}
-                            </a>
-                        </li>
+                            </div>
+                        </template>
                         <li>
                             <div class="py-3 md:py-4 lg:px-3">
                                 <SwitchLang />

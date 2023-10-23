@@ -16,7 +16,7 @@
                         <div
                             class="bg-gray-600/40 w-[370px] min-h-[200px] border border-gray-700/80 rounded-md lg:rounded-lg text-gray-200 overflow-hidden">
                             <div class="w-full h-[210px] lg:h-[220px] xl:h-[240px]">
-                                <img v-lazy="portfolio.image"
+                                <img v-lazy="portfolio.image" :alt="portfolio.name"
                                     class="w-full h-[210px] lg:h-[220px] xl:h-[240px] object-cover rounded-tl-lg rounded-tr-lg" />
                             </div>
 
