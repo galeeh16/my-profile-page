@@ -24,9 +24,9 @@
                                 <h4 class="text-left text-lg font-medium">{{ portfolio.name }}</h4>
 
                                 <div class="flex gap-2 mt-3 items-center flex-wrap">
-                                    <span v-for="tech in portfolio.technologies" :key="tech.id" class="text-sm font-medium"
-                                        :class="tech.color">#{{
-                                            tech.techName }}</span>
+                                    <span v-for="tech in portfolio.technologies" :key="tech.id"
+                                        class="text-sm font-medium" :class="tech.color">#{{
+                tech.techName }}</span>
                                 </div>
                             </div>
                         </div>
@@ -150,6 +150,7 @@ const breakpoints = ref({
 });
 
 import LogeeImg from '/portfolio/logee/logee1.webp';
+import KetupatRamadhanImg from '/portfolio/ketupat-ramadhan/ketupat-ramadhan.webp';
 import BisnisdiDubaiImg from '/portfolio/bisnis-di-dubai/bisnisdidubai1.webp';
 import MerchantImg from '/portfolio/merchant/merchant1.webp';
 import DextopImg from '/portfolio/dextop/dextop1.webp';
@@ -177,6 +178,24 @@ const portfolios = [
             {
                 id: 2,
                 techName: 'Bootstrap',
+                color: 'text-sky-500'
+            },
+        ]
+    },
+    {
+        id: 'ketupat_ramadhan',
+        name: 'Ketupat Ramadhan',
+        desc: '',
+        image: KetupatRamadhanImg,
+        technologies: [
+            {
+                id: 1,
+                techName: 'Nuxt',
+                color: 'text-green-500'
+            },
+            {
+                id: 2,
+                techName: 'TailwindCSS',
                 color: 'text-sky-500'
             },
         ]

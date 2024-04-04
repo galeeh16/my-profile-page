@@ -4,6 +4,16 @@
             <SubTitle :title="$t('work_experience')" />
 
             <div class="mt-4">
+                <div
+                    class="absolute w-52 h-40 md:w-80 md:h-64 lg:w-[500px] lg:h-[400px] lg:top-[50px] right-[10%] bg-purple-500/10 blur-[175px] rotate-[-114deg]">
+                </div>
+                <div
+                    class="absolute w-52 h-40 md:w-80 md:h-64 lg:w-[500px] lg:h-[400px] lg:top-[50px] right-[20%] bg-indigo-500/10  blur-[175px] rotate-[-114deg]">
+                </div>
+                <div
+                    class="absolute w-52 h-40 md:w-80 md:h-64 lg:w-[500px] lg:h-[400px] lg:top-[50px] right-[40%] bg-rose-500/10 blur-[175px] rotate-[-114deg]">
+                </div>
+
                 <div v-for="work in workExperiences" :key="work.id"
                     class="pt-0 pr-0 pb-5 pl-5 border-l-2 border-l-primary relative before:bg-dark before:border-2 before:border-primary before:top-[5px] before:content=[''] before:absolute before:w-4 before:h-4 before:-left-[9px] before:rounded-full">
                     <p class="leading-[28px] text-lg xl:text-xl text-primary font-semibold mb-2">{{ work.office }}</p>
@@ -11,6 +21,7 @@
                         <span v-html="work.desc"></span>
                         <!-- <div v-html="work.desc"></div> -->
                     </p>
+
 
                     <ul class="pl-5 mt-4 list-disc">
                         <li class="pb-3.5" v-for="item in work.list" :key="item.id">
@@ -27,8 +38,8 @@
 const workExperiences = [
     {
         id: 1,
-        office: 'KOPNUSPOS',
-        desc: `Programmer at <a target="_blank" href="https://www.kopnuspos.com/" class="italic font-medium text-primary hover:underline">KOPNUSPOS</a> (Nov 2019 - Present)`,
+        office: 'KOPNUS',
+        desc: `Programmer at <a target="_blank" href="https://www.kopnus.com/" class="italic font-medium text-primary hover:underline">KOPNUS</a> (Nov 2019 - Present)`,
         list: [
             { id: '1-1', text: 'Research, design and develop software system who client needs.' },
             { id: '1-2', text: 'Develop existing program or creating program by analyzing and understanding source code for modification.' },
@@ -60,6 +71,9 @@ const workExperiences = [
             { id: '1-28', text: 'Creating Backend Host to Host with Bank Kalsel.' },
             { id: '1-29', text: 'Creating Backend Host to Host with Hana Bank.' },
             { id: '1-30', text: 'Creating Backend Host to Host with Bukopin.' },
+            { id: '1-31', text: 'Creating Frontend for Ketupat Ramadhan Kopnus App with NuxtJS.' },
+            { id: '1-32', text: 'Creating Backend for Ketupat Ramadhan Kopnus App with Lumen.' },
+            { id: '1-33', text: 'Creating Backend for Oren Backoffice App.' },
         ]
     },
     {

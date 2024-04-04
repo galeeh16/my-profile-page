@@ -81,14 +81,15 @@
                     </div>
                 </div>
 
-                <h3 class="mt-8 md:mt-10 lg:mt-16 text-center text-lg md:text-xl font-semibold">Tools and Technologies</h3>
+                <h3 class="mt-8 md:mt-10 lg:mt-16 text-center text-lg md:text-xl font-semibold">Tools and Technologies
+                </h3>
 
                 <div class="flex justify-center flex-wrap items-center gap-6 md:gap-8 lg:gap-9 py-4 md:py-6 lg:py-8">
                     <div class="group flex relative cursor-pointer mb-4" v-for="tool in tools" :key="tool.id">
                         <component :is="tool.component"></component>
                         <span
                             class="group-hover:opacity-100 hidden group-hover:inline whitespace-nowrap transition-opacity bg-gray-600 px-3 py-1 text-sm text-white rounded-md absolute left-1/2 z-10 -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">{{
-                                tool.name }}</span>
+                    tool.name }}</span>
                     </div>
                 </div>
 
@@ -105,6 +106,11 @@ const tools = [
         id: 1,
         component: resolveComponent('IconsPHP'),
         name: "PHP"
+    },
+    {
+        id: 90,
+        component: resolveComponent('IconsGolang'),
+        name: "Go"
     },
     {
         id: 2,
