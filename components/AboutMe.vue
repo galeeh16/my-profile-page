@@ -21,7 +21,8 @@
                 <div class="flex flex-col sm:flex-row gap-5 md:gap-8 lg:gap-10 xl:gap-14 2xl:gap-16 mt-10 md:mt-16">
                     <div class="w-48 h-48 md:w-56 md:h-56 lg:w-72 lg:h-72 self-center md:self-start">
                         <ClientOnly>
-                            <img v-lazy="Me" alt="Me" class="w-48 h-48 md:w-56 md:h-56 lg:w-72 lg:h-72 object-cover">
+                            <img v-lazy="Me" alt="Me"
+                                class="w-48 h-48 md:w-56 md:h-56 lg:w-72 lg:h-72 object-cover rounded-xl">
                         </ClientOnly>
                     </div>
                     <div class="flex-1">
@@ -89,7 +90,7 @@
                         <component :is="tool.component"></component>
                         <span
                             class="group-hover:opacity-100 hidden group-hover:inline whitespace-nowrap transition-opacity bg-gray-600 px-3 py-1 text-sm text-white rounded-md absolute left-1/2 z-10 -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">{{
-                    tool.name }}</span>
+                                tool.name }}</span>
                     </div>
                 </div>
 

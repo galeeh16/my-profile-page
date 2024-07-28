@@ -3,7 +3,7 @@
 
         <div class="relative">
             <div
-                class="absolute w-52 h-40 md:w-80 md:h-64 lg:w-[500px] lg:h-[400px] bg-indigo-500/30 left-[50%] top-[40px] lg:top-28 -translate-x-1/2 blur-[175px]">
+                class="absolute w-52 h-40 md:w-80 md:h-64 lg:w-[500px] lg:h-[400px] bg-purple-500/20 left-[50%] top-[40px] lg:top-28 -translate-x-1/2 blur-[175px]">
             </div>
             <SubTitle :title="$t('portfolio')" />
             <p class="text-center px-4 md:px-8 lg:px-20 xl:px-40 mt-4 leading-7">This is the projects that i made so
@@ -14,7 +14,7 @@
                 <Carousel ref="myCarousel" v-bind="settings" :breakpoints="breakpoints">
                     <Slide v-for="portfolio in portfolios" :key="portfolio.id">
                         <div
-                            class="bg-gray-600/40 w-[370px] min-h-[200px] border border-gray-700/80 rounded-md lg:rounded-lg text-gray-200 overflow-hidden">
+                            class="bg-gray-600/40 w-[370px] min-h-[200px] border border-gray-700/80 rounded-md lg:rounded-lg text-gray-300 overflow-hidden">
                             <div class="w-full h-[210px] lg:h-[220px] xl:h-[240px]">
                                 <img v-lazy="portfolio.image" :alt="portfolio.name"
                                     class="w-full h-[210px] lg:h-[220px] xl:h-[240px] object-cover rounded-tl-lg rounded-tr-lg" />
@@ -26,7 +26,7 @@
                                 <div class="flex gap-2 mt-3 items-center flex-wrap">
                                     <span v-for="tech in portfolio.technologies" :key="tech.id"
                                         class="text-sm font-medium" :class="tech.color">#{{
-                tech.techName }}</span>
+                                            tech.techName }}</span>
                                 </div>
                             </div>
                         </div>

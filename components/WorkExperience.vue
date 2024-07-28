@@ -11,7 +11,7 @@
                     class="absolute w-52 h-40 md:w-80 md:h-64 lg:w-[500px] lg:h-[400px] lg:top-[50px] right-[20%] bg-indigo-500/10  blur-[175px] rotate-[-114deg]">
                 </div>
                 <div
-                    class="absolute w-52 h-40 md:w-80 md:h-64 lg:w-[500px] lg:h-[400px] lg:top-[50px] right-[40%] bg-rose-500/10 blur-[175px] rotate-[-114deg]">
+                    class="absolute w-52 h-40 md:w-80 md:h-64 lg:w-[500px] lg:h-[400px] lg:top-[50px] right-[40%] bg-rose-400/10 blur-[175px] rotate-[-114deg]">
                 </div>
 
                 <div v-for="work in workExperiences" :key="work.id"

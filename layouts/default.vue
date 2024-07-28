@@ -18,7 +18,7 @@ onMounted(() => {
 
 useHead({
     bodyAttrs: {
-        class: 'bg-dark text-gray-300 text-[14px] md:text-base'
+        class: 'bg-dark text-gray-300 text-[16px] md:text-base'
     }
 });
 
