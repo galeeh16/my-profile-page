@@ -33,21 +33,6 @@ export default defineNuxtConfig({
           href: '/logo.svg',
           sizes: 'any'
         },
-        {
-          rel: 'preload',
-          as: 'image',
-          href: '/illustration.webp'
-        },
-        {
-          rel: 'preload',
-          as: 'image',
-          href: '/chat.webp'
-        },
-        {
-          rel: 'preload',
-          as: 'image',
-          href: '/laptop.webp'
-        },
       ]
     }
   },

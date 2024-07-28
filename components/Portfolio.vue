@@ -16,8 +16,9 @@
                         <div
                             class="bg-gray-600/40 w-[370px] min-h-[200px] border border-gray-700/80 rounded-md lg:rounded-lg text-gray-300 overflow-hidden">
                             <div class="w-full h-[210px] lg:h-[220px] xl:h-[240px]">
-                                <img v-lazy="portfolio.image" :alt="portfolio.name"
-                                    class="w-full h-[210px] lg:h-[220px] xl:h-[240px] object-cover rounded-tl-lg rounded-tr-lg" />
+                                <!-- <img v-lazy="portfolio.image" :alt="portfolio.name"
+                                    class="w-full h-[210px] lg:h-[220px] xl:h-[240px] object-cover rounded-tl-lg rounded-tr-lg" /> -->
+                                <NuxtImg :src="portfolio.image" format="webp" loading="lazy" :alt="portfolio.name" />
                             </div>
 
                             <div class="py-4 px-3 pt-3">
@@ -31,10 +32,6 @@
                             </div>
                         </div>
                     </Slide>
-
-                    <!-- <template #addons>
-                        <Navigation />
-                    </template> -->
                 </Carousel>
 
                 <!-- Custom button next and prev -->
@@ -62,7 +59,7 @@
 <script setup>
 // https://ismail9k.github.io/vue3-carousel/api/methods.html
 import 'vue3-carousel/dist/carousel.css'
-import { Carousel, Navigation, Slide } from 'vue3-carousel'
+import { Carousel, Slide } from 'vue3-carousel'
 
 const myCarousel = ref(null)
 
@@ -149,26 +146,12 @@ const breakpoints = ref({
     }
 });
 
-import LogeeImg from '/portfolio/logee/logee1.webp';
-import KetupatRamadhanImg from '/portfolio/ketupat-ramadhan/ketupat-ramadhan.webp';
-import BisnisdiDubaiImg from '/portfolio/bisnis-di-dubai/bisnisdidubai1.webp';
-import MerchantImg from '/portfolio/merchant/merchant1.webp';
-import DextopImg from '/portfolio/dextop/dextop1.webp';
-import YoubidImg from '/portfolio/youbid/youbid1.webp';
-import CBSImg from '/portfolio/cbs-web/cbs1.webp';
-import CBSMonitoringImg from '/portfolio/cbs-monitoring/cbs-monitoring3.webp';
-import CoreTeamImg from '/portfolio/core-team/core-team.webp';
-import SKMImg from '/portfolio/skm/skm1.webp';
-import MyProfileImg from '/portfolio/my-profile/my-profile.webp';
-import MonitoringKopnusposImg from '/portfolio/monitoring-kopnuspos/monitoring-kopnuspos1.webp';
-import KPTImg from '/portfolio/kpt/kpt2.webp';
-
 const portfolios = [
     {
         id: 'logee',
         name: 'Logee',
         desc: '',
-        image: LogeeImg,
+        image: '/portfolio/logee/logee1.webp',
         technologies: [
             {
                 id: 1,
@@ -186,7 +169,7 @@ const portfolios = [
         id: 'ketupat_ramadhan',
         name: 'Ketupat Ramadhan',
         desc: '',
-        image: KetupatRamadhanImg,
+        image: '/portfolio/ketupat-ramadhan/ketupat-ramadhan.webp',
         technologies: [
             {
                 id: 1,
@@ -204,7 +187,7 @@ const portfolios = [
         id: 'bisnis_di_dubai',
         name: 'Bisnis di Dubai',
         desc: '',
-        image: BisnisdiDubaiImg,
+        image: '/portfolio/bisnis-di-dubai/bisnisdidubai1.webp',
         technologies: [
             {
                 id: 1,
@@ -222,7 +205,7 @@ const portfolios = [
         id: 'merchant_kopnuspos',
         name: 'Merchant Kopnuspos',
         desc: '',
-        image: MerchantImg,
+        image: '/portfolio/merchant/merchant1.webp',
         technologies: [
             {
                 id: 1,
@@ -240,7 +223,7 @@ const portfolios = [
         id: 'dextop',
         name: 'Dextop',
         desc: '',
-        image: DextopImg,
+        image: '/portfolio/dextop/dextop1.webp',
         technologies: [
             {
                 id: 1,
@@ -258,7 +241,7 @@ const portfolios = [
         id: 'youb_id',
         name: 'Youb.id',
         desc: '',
-        image: YoubidImg,
+        image: '/portfolio/youbid/youbid1.webp',
         technologies: [
             {
                 id: 1,
@@ -276,7 +259,7 @@ const portfolios = [
         id: 'cbs_web',
         name: 'CBS Web',
         desc: '',
-        image: CBSImg,
+        image: '/portfolio/cbs-web/cbs1.webp',
         technologies: [
             {
                 id: 1,
@@ -294,7 +277,7 @@ const portfolios = [
         id: 'cbs_monitoring',
         name: 'CBS Monitoring',
         desc: '',
-        image: CBSMonitoringImg,
+        image: '/portfolio/cbs-monitoring/cbs-monitoring3.webp',
         technologies: [
             {
                 id: 1,
@@ -312,7 +295,7 @@ const portfolios = [
         id: 'core_team',
         name: 'Core Team Kopnus',
         desc: '',
-        image: CoreTeamImg,
+        image: '/portfolio/core-team/core-team.webp',
         technologies: [
             {
                 id: 1,
@@ -330,7 +313,7 @@ const portfolios = [
         id: 'skm_cianjur',
         name: 'SKM Cianjur',
         desc: '',
-        image: SKMImg,
+        image: '/portfolio/skm/skm1.webp',
         technologies: [
             {
                 id: 1,
@@ -348,7 +331,7 @@ const portfolios = [
         id: 'my_profile_page',
         name: 'My Profile Page',
         desc: '',
-        image: MyProfileImg,
+        image: '/portfolio/my-profile/my-profile.webp',
         technologies: [
             {
                 id: 1,
@@ -366,7 +349,7 @@ const portfolios = [
         id: 'monitoring_kopnuspos',
         name: 'Monitoring Kopnuspos',
         desc: '',
-        image: MonitoringKopnusposImg,
+        image: '/portfolio/monitoring-kopnuspos/monitoring-kopnuspos1.webp',
         technologies: [
             {
                 id: 1,
@@ -384,7 +367,7 @@ const portfolios = [
         id: 'kpt',
         name: 'KopnusPosTaspen',
         desc: '',
-        image: KPTImg,
+        image: '/portfolio/kpt/kpt2.webp',
         technologies: [
             {
                 id: 1,

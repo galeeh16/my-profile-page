@@ -18,7 +18,6 @@
     "flowbite": "^1.7.0",
     "nuxt": "^3.8.2",
     "nuxt-icon": "^0.4.2",
-    "vue-lazyload": "^3.0.0",
     "vue3-carousel": "^0.3.1"
   }
 }

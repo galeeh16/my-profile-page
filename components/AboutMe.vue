@@ -19,8 +19,9 @@
                     challenges. My hobby is playing pingpong, guitar, badminton, games and photography enthusiast.</p>
 
                 <div class="flex flex-col sm:flex-row gap-5 md:gap-8 lg:gap-10 xl:gap-14 2xl:gap-16 mt-10 md:mt-16">
-                    <div class="w-48 h-48 md:w-56 md:h-56 lg:w-72 lg:h-72 self-center md:self-start">
-                        <NuxtImg src="/me.webp" format="webp" alt="Me"
+                    <div
+                        class="w-48 h-48 md:w-56 md:h-56 lg:w-72 lg:h-72 self-center md:self-start bg-gray-800 rounded-xl">
+                        <NuxtImg loading="lazy" src="/me.webp" format="webp" alt="Me"
                             class="w-48 h-48 md:w-56 md:h-56 lg:w-72 lg:h-72 object-cover rounded-xl" />
                     </div>
                     <div class="flex-1">
