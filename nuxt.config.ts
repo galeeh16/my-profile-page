@@ -71,6 +71,11 @@ export default defineNuxtConfig({
       cookieKey: 'i18n_redirected',
     },
   },
+  image: {
+    domains: [
+      'galih-anggoro-jati.vercel.app'
+    ]
+  },
   nitro: {
     prerender: {
       routes: [
