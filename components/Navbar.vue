@@ -3,12 +3,13 @@
         <nav class="wrapper py-4">
             <div class="flex flex-wrap items-center justify-between">
                 <a :href="switchLocalePath('/')" class="flex items-center gap-2">
-                    <Icon name="material-symbols:deployed-code-outline-sharp" class="text-primary w-7 h-7 md:w-8 md:h-8" />
+                    <Icon name="material-symbols:deployed-code-outline-sharp"
+                        class="text-primary w-7 h-7 md:w-8 md:h-8" />
                     <span class="text-[26px] lg:text-[28px] text-primary font-galih">Galih</span>
                 </a>
 
-                <button type="button" data-collapse-toggle="navbar-default" class="block lg:hidden scale-90" ref="hamburger"
-                    name="toggle" aria-label="toggle" @click="toggleSidebar">
+                <button type="button" data-collapse-toggle="navbar-default" class="block lg:hidden scale-90"
+                    ref="hamburger" name="toggle" aria-label="toggle" @click="toggleSidebar">
                     <span
                         class="w-[30px] h-[2px] block bg-white my-2 transition-all duration-300 ease-in-out origin-top-left"></span>
                     <span class="w-[30px] h-[2px] block bg-white my-2 transition-all duration-300 ease-in-out"></span>
@@ -20,10 +21,10 @@
                     <ul
                         class="font-medium flex items-center flex-col p-4 lg:p-0 mt-4 rounded-lg lg:flex-row lg:mt-0 bg-black/90 lg:bg-transparent">
                         <template v-for="link in links" :key="link.id" class="w-full lg:w-auto text-center">
-                            <div class="block py-2 md:py-4 lg:py-2 px-6 text-gray-100 nav-link cursor-pointer"
+                            <li class="block py-2 md:py-4 lg:py-2 px-6 text-gray-100 nav-link cursor-pointer"
                                 :class="{ 'text-primary': currentSection === link.id }" @click="useScrollMeTo(link.id)">
                                 {{ $t(link.languageName) }}
-                            </div>
+                            </li>
                         </template>
                         <li>
                             <div class="py-3 md:py-4 lg:px-3">
