@@ -5,11 +5,7 @@ export default defineNuxtConfig({
   experimental: {
     watcher: "chokidar",
   },
-  modules: [
-    '@nuxtjs/i18n',
-    '@nuxtjs/tailwindcss',
-    'nuxt-icon',
-  ],
+  modules: ['@nuxtjs/i18n', '@nuxtjs/tailwindcss', 'nuxt-icon', "@nuxt/image"],
   app: {
     head: {
       title: 'Galih Anggoro Jati',
