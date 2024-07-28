@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   experimental: {
     watcher: "chokidar",
   },
-  modules: ['@nuxtjs/i18n', '@nuxtjs/tailwindcss', 'nuxt-icon', "@nuxt/image"],
+  modules: ['@nuxtjs/i18n', '@nuxtjs/tailwindcss', 'nuxt-icon', "@nuxt/image", "@nuxt/image-edge"],
   app: {
     head: {
       title: 'Galih Anggoro Jati',
@@ -72,6 +72,7 @@ export default defineNuxtConfig({
     },
   },
   image: {
+    provider: 'ipx',
     domains: [
       'galih-anggoro-jati.vercel.app'
     ]
