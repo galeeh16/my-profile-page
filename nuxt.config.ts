@@ -70,6 +70,29 @@ export default defineNuxtConfig({
       useCookie: true,
       cookieKey: 'i18n_redirected',
     },
+  },
+  nitro: {
+    prerender: {
+      routes: [
+        '/_ipx/f_webp/chat.webp',
+        '/_ipx/f_webp/illustration.webp',
+        '/_ipx/f_webp/laptop.webp',
+        '/_ipx/f_webp/me.webp',
+        '/_ipx/f_webp/portfolio/logee/logee1.webp',
+        '/_ipx/f_webp/portfolio/ketupat-ramadhan/ketupat-ramadhan.webp',
+        '/_ipx/f_webp/portfolio/bisnis-di-dubai/bisnisdidubai1.webp',
+        '/_ipx/f_webp/portfolio/merchant/merchant1.webp',
+        '/_ipx/f_webp/portfolio/dextop/dextop1.webp',
+        '/_ipx/f_webp/portfolio/youbid/youbid1.webp',
+        '/_ipx/f_webp/portfolio/cbs-web/cbs1.webp',
+        '/_ipx/f_webp/portfolio/cbs-monitoring/cbs-monitoring3.webp',
+        '/_ipx/f_webp/portfolio/core-team/core-team.webp',
+        '/_ipx/f_webp/portfolio/core-team/core-team.webp',
+        '/_ipx/f_webp/portfolio/my-profile/my-profile.webp',
+        '/_ipx/f_webp/portfolio/monitoring-kopnuspos/monitoring-kopnuspos1.webp',
+        '/_ipx/f_webp/portfolio/kpt/kpt2.webp'
+      ]
+    }
   }
 
 })
