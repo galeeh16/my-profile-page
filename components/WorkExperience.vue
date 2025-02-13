@@ -5,7 +5,7 @@
 
             <div class="mt-4">
                 <div
-                    class="absolute w-52 h-40 md:w-80 md:h-64 lg:w-[500px] lg:h-[400px] lg:top-[50px] right-[10%] bg-purple-500/10 blur-[175px] rotate-[-114deg]">
+                    class="absolute w-52 h-40 md:w-80 md:h-64 lg:w-[500px] lg:h-[400px] lg:top-[50px] right-[10%] bg-purple-500/20 blur-[175px] rotate-[-114deg]">
                 </div>
                 <div
                     class="absolute w-52 h-40 md:w-80 md:h-64 lg:w-[500px] lg:h-[400px] lg:top-[50px] right-[20%] bg-indigo-500/10  blur-[175px] rotate-[-114deg]">
@@ -74,6 +74,8 @@ const workExperiences = [
             { id: '1-31', text: 'Creating Frontend for Ketupat Ramadhan Kopnus App with NuxtJS.' },
             { id: '1-32', text: 'Creating Backend for Ketupat Ramadhan Kopnus App with Lumen.' },
             { id: '1-33', text: 'Creating Backend for Oren Backoffice App.' },
+            { id: '1-34', text: 'Creating Service Asuransi with Laravel.' },
+            { id: '1-35', text: 'Creating Service Channeling with Laravel.' },
         ]
     },
     {

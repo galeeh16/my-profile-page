@@ -9,7 +9,7 @@
                 <SubTitle :title="$t('about')" />
                 <p class="text-center px-4 md:px-8 lg:px-20 xl:px-40 mt-4 leading-7">Hi, my name is <b>Galih Anggoro
                         Jati</b>. I am
-                    27
+                    {{ useAge('1996-01-16') }}
                     years old and
                     I am
                     Informatics Engineer who
